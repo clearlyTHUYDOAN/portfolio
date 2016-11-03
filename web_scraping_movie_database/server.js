@@ -1,12 +1,3 @@
-// ** R E V I E W ** —> I love when people put creative twists on the assignments. Nice touches from the css, 
-// input placeholder and use of an iframe to add a Youtube video. I have only seen one or two of these movies and
-// they look worth seeing if I ever find the time. Your server code is super organized and I think it was a
-// good design choice to only use the API for search. You also address many issues that some people might
-// overlook or not know how to handle, such as handling bad results from a search. All in all there's little
-// to criticize, so keep up the hard work and putting your own personal touches and you will have plenty to show
-// for yourself when you graduate.   
-
-
 // COMPLETE.
 // This particular API is case insensitive by default.
 
@@ -59,20 +50,8 @@ app.get('/searchresults/:title', (req, res) => {
     let movies = getmovies();
     let status = false;
     searchresults = []
-    // For every search query, look through hardcoded database first.
-    // for (var i = 0; i < movies.length; i++) {
-    //     if (movies[i].title.toLowerCase().includes(req.params.title.toLowerCase())) {
-    //         searchresults.push(movies[i]);
-    //         status = true;
-    //         console.log(searchresults);
-    //     }; 
-    // };
-    // console.log(status);
-    // if (status === true) {
-    //     res.render('pages/searchresults', {searchresults: searchresults});
-    // If not in hardcoded database, check omdb.
 
-    // Actually, just always check omdb to maximize results user receives.
+    // Instead of checking hardcoded database first, just always check omdb to maximize results user receives.
     if (status === false) {
     // } else if (status === false) {
         // console.log(status);
