@@ -1,0 +1,206 @@
+<!--COMPLETE.-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Thuy's Journal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+
+    <div class="hero">
+        <div class="hero-image animate"></div>
+    </div>
+		
+
+<!--Start first container-->
+    <div class="container" class="journal-body">
+
+        <header>
+
+            <div class="row">
+
+                <div class="col-md-12 col-sm-12 journal-header animate">
+                    <h1>clearly, THUYDOAN's Journal</h1>
+                    <medium>A collection of daily musings.</medium>
+                </div>
+
+            </div>
+
+        </header>
+
+        <form class="journalSearchForm">
+
+<!--By default, bootstrap columns float left so this fixes any overflow issues. class="row"-->
+            <div class="row">
+
+                <div class="col-md-12" class="form-group">
+                    <label for="Search">Search</label>
+                    <input type="text" class="form-control" id="searchButton" placeholder="What are you looking for?">
+                    <br>
+                </div>
+
+                <div class="col-md-1 col-sm-1" class="form-group">
+                    <button type="button" class="btn btn-default btn-sm searchButton">Search</button>
+                </div>
+
+                <div class="col-md-1 col-sm-1" class="form-group">
+                    <button type="button" class="btn btn-default btn-sm displayAll">Display All Entries</button>
+                </div>
+            
+            </div>
+            <hr>
+
+        </form>
+
+        <form class="journalForm">
+
+            <div class="row">
+
+                <div class="col-md-6 col-sm-12" class="form-group">
+                    <label for="journalTitle">Title</label>
+                    <input type="text" class="form-control" id="journalTitle" placeholder="Title">
+                    <br>
+                </div>
+
+                <div class="col-md-6 col-sm-12" class="form-group">
+                    <label for="journalAuthor">Author</label>
+                    <input type="text" class="form-control" id="journalAuthor" placeholder="Author">
+                    <br>
+                </div>
+
+                <div class="col-md-12" class="form-group">
+                    <label for="journalMainText">Journal Entry</label>
+                    <textarea type="text" class="form-control" id="journalMainText" rows="5" placeholder="Today I watched Westworld, which was awesome..."></textarea>
+                    <br>
+                </div>
+
+                <div class="col-md-12" class="form-group">
+                    <label for="Tags">Tags</label>
+                    <input type="text" class="form-control" id ="journalTags" placeholder="Please separate tags by a comma followed by a space.">
+                    <br>
+                    <button type="button" class="btn btn-default btn-sm logEntry">Log Entry</button>
+                </div>
+
+            </div>
+
+        </form>
+
+        <!--<hr>-->
+
+    </div> 
+<!--Close first container-->
+
+    <div class="row">
+        <div class="middle-media">
+            <div class="middle-image"></div>
+        </div>
+    </div>   
+
+<!--Start second container-->
+    <div class="container">    
+
+        <section>
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 journal-entries-header">
+                    <h2>Journal Entries</h2>
+                </div>
+
+            </div>
+
+        </section>
+        <br>
+
+<!--Start rendered journal entries div.-->
+        <div class="renderedJournalEntries">
+
+<!--Test rendered entries with tags showing.-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Default Entry</h3>
+                </div>
+                <div class="panel-body">
+                    This is a visual test.
+                </div>
+                <div class="panel-footer">
+                    <span class="label label-primary">Primary</span>
+                    <span class="label label-primary">Secondary</span>
+                    <span class="label label-primary">Tertiary</span>
+                </div>
+            </div>
+<!--Close testing rendered entries with tags showing.-->
+
+        </div>
+<!--Close rendered journal entries div.-->
+<hr>
+
+        <section class="footer-media">
+
+            <div class="row">
+
+                <div class="footer-media-header">
+                    <h5>INSTAGRAM @DRESSUPCHOWDOWN</h5>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <a href="https://www.instagram.com/p/BHvplRQAeoz/?taken-by=dressupchowdown" target="_blank" class="thumbnail">
+                    <img src="thuy1.jpg" alt="Thuy via Dress Up, Chow Down - Thumbnail 1">
+                    </a>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <a href="https://www.instagram.com/p/BGLKcnUg_cS/?taken-by=dressupchowdown" target="_blank" class="thumbnail">
+                    <img src="parisbythuy1.jpg" alt="Thuy via Dress Up, Chow Down - Thumbnail 2">
+                    </a>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <a href="https://www.instagram.com/p/BJ1QT4WAges/?taken-by=dressupchowdown" target="_blank" class="thumbnail">
+                    <img src="thuy2.jpg" alt="Thuy via Dress Up, Chow Down - Thumbnail 3">
+                    </a>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <a href="https://www.instagram.com/p/BGPn0WdA_ZF/?taken-by=dressupchowdown" target="_blank" class="thumbnail">
+                    <img src="parisbythuy2.jpg" alt="Thuy via Dress Up, Chow Down - Thumbnail 4">
+                    </a>
+                </div>
+
+            </div>
+<!--Close row.-->
+
+        </section>
+<!--Close footer media.-->
+
+        <hr>
+
+<!--Address footer.-->
+        <footer>
+
+            <address class="address-footer">
+                <strong>Brainstation</strong><br>
+                460 King St. W<br>
+                Toronto, ON M5V 1K7<br>
+                <abbr title="Phone">C:</abbr> (519) 567-1636
+            </address>
+
+            <address class="address-footer">
+                <strong>Thuy Doan</strong><br>
+                <a href="mailto:#">clearlythuydoan@gmail.com</a>
+            </address>
+
+        </footer>
+
+    </div>
+<!--Close second container-->
+
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

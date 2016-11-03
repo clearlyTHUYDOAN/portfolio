@@ -1,0 +1,57 @@
+<!--COMPLETE.-->
+
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/styles.css">        
+    </head>
+
+    <body>
+        <div class="container">
+            <h2 class="text-center">Search Results</h2>
+
+<!--Repeat below html structure until you go through all movies that matched the search query.-->
+            <% for (var i = 0; i < searchresults.length; i++) {  %> 
+
+            <a class="movie-link" href=<%= '/omdbmovie/' + searchresults[i].Title.split(' ').join("+") %>> 
+            <div class="media movie-list-item">
+                <div class="media-left">
+                    <% if (searchresults[i].Poster === "N/A") { %>
+                        <img class="media-object movie-poster" src="http://www.esm.rochester.edu/uploads/NoPhotoAvailable.jpg" />
+                    <% } else { %>
+                        <img class="media-object movie-poster" src=<%= searchresults[i].Poster %> />
+                    <% } %>
+                    
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">
+                        <%= searchresults[i].Title %>
+                        <span class="badge"><%= searchresults[i].imdbRating %></span>
+                    </h4>
+                    <div>
+                        <%= searchresults[i].Plot %>
+                    </div>
+                    <div class="released-date">
+                        Released: <%= searchresults[i].Released %>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+            <% } %>
+
+            <div class="row">
+                <div class=buttons>
+                    <a class="btn btn-warning" href=<%= '/' %>>Back</a>
+                </div>
+            </div>
+
+        </div>
+    
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
+
