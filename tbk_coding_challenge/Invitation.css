@@ -4,33 +4,49 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+/*.overlay {
+    height: 1175px;
+    width: 75%;
+    margin: auto;
+}*/
 body {
   margin: 0; }
 
 /* General Classes */
 .italicize {
+  /* Typography */
   font-style: italic; }
 
 .font-futura-pt-thick {
+  /* Typography */
   font-family: futura-pt, sans-serif;
   font-style: normal;
   font-weight: 400; }
 
 .font-futura-pt-thin {
+  /* Typography */
   font-family: futura-pt, sans-serif;
   font-style: normal;
   font-weight: 200; }
 
 .font-freight {
+  /* Typography */
   font-family: freight-big-pro, serif;
   font-style: normal;
   font-weight: 500; }
 
 h1 {
+  /* Box Model */
+  margin-bottom: 50px;
+  /* Typography */
   font-size: 3em; }
 
 hr {
+  /* Box Model */
+  margin-top: 40px;
+  margin-bottom: 40px;
   height: 3px;
+  /* Visual */
   background-color: #9f173d; }
 
 /* Other Classes */
@@ -67,9 +83,16 @@ hr {
   /* Misc */
   opacity: 0.5; }
 
+.full-invitation-container {
+  z-index: 1; }
+
+.invitation-body-container {
+  width: 100%;
+  background-color: white; }
+
 .invitation-body {
   /* Box-model */
-  height: 725px;
+  height: 800px;
   max-width: 575px;
   padding-top: 75px;
   margin: auto;
@@ -79,6 +102,8 @@ hr {
   background-color: white; }
   .invitation-body .company-name {
     color: #9f173d; }
+  .invitation-body .event-description {
+    line-height: 150%; }
   .invitation-body .unordered-list {
     /* Box Model */
     max-width: 450px;
@@ -107,7 +132,8 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
+  padding-bottom: 80px;
+  height: 375px;
   /*Typography*/
   color: white;
   text-align: center;

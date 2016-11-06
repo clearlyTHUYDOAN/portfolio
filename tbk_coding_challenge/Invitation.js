@@ -10,3 +10,5 @@ setTimeout(function() {
 $(".close-button").click(function() {
     console.log("Close button was clicked.")
 });
+
+/* Accessility */
