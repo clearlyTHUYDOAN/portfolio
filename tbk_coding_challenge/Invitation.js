@@ -19,9 +19,7 @@ $(document).ready(function() {
                   $('#parallax-shavings').addClass('hidden');
               }
           }); 
-          // Prevent flashing of popup on page load.
-          $('#my_popup').popup('hide');
-          $('#my_popup').removeClass('hidden');
+          
           setTimeout(function() {
               $('#my_popup').popup('show'); 
               $('#parallax-chisel').removeClass('hidden');
