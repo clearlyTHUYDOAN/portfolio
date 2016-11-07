@@ -2,6 +2,8 @@ body {
     margin: 0; //so invitation-footer actually colours the whole way.
 }
 
+$ruby-red: rgb(159, 23, 61);
+
 // General Classes //
 
 .italicize {
@@ -57,7 +59,7 @@ hr {
     margin-bottom: 40px;
     height: 1px;
     /* Visual */ 
-    background-color: rgb(159,23,61);
+    background-color: $ruby-red;
 }
 
 // Other Classes //
@@ -124,7 +126,7 @@ hr {
     /* Box Model */
     width: 25px;
     /* Visual */
-    color: rgb(159,23,61);
+    color: $ruby-red;
     background-color: white;
 }
 
@@ -201,7 +203,7 @@ hr {
 
     .company-name {
         /* Visual */
-        color: rgb(159,23,61);
+        color: $ruby-red;
     }
 
     .event-description {
@@ -257,7 +259,7 @@ hr {
 
     li { /* for ul bullet color */
         /* Typography */
-        color: rgb(159,23,61);
+        color: $ruby-red;
     }
 
     li span { /* to separate text color from bullet color. */
@@ -297,7 +299,7 @@ hr {
     color: white;
     text-align: center;
     /*Visual*/
-    background-color: rgb(159,23,61);
+    background-color: $ruby-red;
 
     .invitation-footer-title {
         /* Box Model */
