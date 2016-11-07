@@ -12,44 +12,44 @@ $(document).ready(function() {
 
       if (restrictpopup === false) {
           // Initialize plugin with transition and onclose specifications.
-          $('#my_popup').popup({
-              transition: 'all 1s',
+          $("#my_popup").popup({
+              transition: "all 1s",
               onclose: () => {
-                  $('#parallax-chisel').addClass('hidden')
-                  $('#parallax-shavings').addClass('hidden');
+                  $("#parallax-chisel").addClass("hidden")
+                  $("#parallax-shavings").addClass("hidden");
               }
           }); 
 
           // When user has been on the site for 3 seconds, deploy popover. 
           setTimeout(function() {
-              $('#my_popup').popup('show'); 
-              $('#parallax-chisel').removeClass('hidden');
-              $('#parallax-shavings').removeClass('hidden');
+              $("#my_popup").popup("show"); 
+              $("#parallax-chisel").removeClass("hidden");
+              $("#parallax-shavings").removeClass("hidden");
           }, 0);
           restrictpopup = true;
-          localStorage.restrictpopup='true';
+          localStorage.restrictpopup="true";
       }
 
     // Hide popup when close button is clicked. Can also be closed using ESC and clicking outside popup. 
     $(".close-button").click(function() {
-        $('#my_popup').popup('hide');
-        $('#parallax-chisel').addClass('hidden');
-        $('#parallax-shavings').addClass('hidden');
+        $("#my_popup").popup("hide");
+        $("#parallax-chisel").addClass("hidden");
+        $("#parallax-shavings").addClass("hidden");
     });
 
     // Parallax Chisel //
     // Source: http://www.javascriptkit.com/dhtmltutors/parallaxscrolling/ 
     
-    var chisel = document.getElementById('parallax-chisel')
-    var shavings = document.getElementById('parallax-shavings')
+    var chisel = document.getElementById("parallax-chisel")
+    var shavings = document.getElementById("parallax-shavings")
     
     function parallaxchiselshavings(){
         var scrolltop = $("#my_popup_wrapper")[0].scrollTop // get number of pixels document has scrolled vertically 
-        chisel.style.top = 400 -scrolltop * .10 + 'px' // move chisel at 10% of scroll rate
-        shavings.style.top = 190 -scrolltop * .25 + 'px' // move shavings at 25% of scroll rate
+        chisel.style.top = 400 -scrolltop * .10 + "px" // move chisel at 10% of scroll rate
+        shavings.style.top = 190 -scrolltop * .25 + "px" // move shavings at 25% of scroll rate
     }
 
-    $( "#my_popup_wrapper" ).scroll(function() { // when scrolling within this element...
+    $("#my_popup_wrapper").scroll(function() { // when scrolling within this element...
         parallaxchiselshavings(); // ... run this function.
     });
   
