@@ -36,6 +36,9 @@ h1 {
   /* Typography */
   font-size: 3em; }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  h1 {
+    font-size: 6em; } }
 hr {
   /* Box Model */
   margin-top: 40px;
@@ -45,6 +48,15 @@ hr {
   background-color: #9f173d; }
 
 /* Other Classes */
+.hidden {
+  display: none; }
+
+#my_popup {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 70%;
+  background-color: white; }
+
 .close-button {
   /* Positioning */
   position: absolute;
@@ -84,25 +96,42 @@ hr {
 
 .invitation-body {
   /* Box-model */
-  height: 800px;
   max-width: 575px;
   padding-top: 75px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: auto;
   /*Typography*/
   text-align: center;
   /*Visual*/
   background-color: white; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .invitation-body .invitation-greeting {
+      font-size: 3em; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .invitation-body .invitation-transition-phrase {
+      font-size: 3em; } }
   .invitation-body .company-name {
     color: #9f173d; }
   .invitation-body .event-description {
     line-height: 150%; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .invitation-body .event-description {
+      font-size: 2em; } }
   .invitation-body .unordered-list {
     /* Box Model */
     max-width: 450px;
     margin: auto;
+    margin-bottom: 75px;
+    padding-right: 20px;
     /*Typography*/
-    text-align: left;
-    line-height: 175%; }
+    text-align: left; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .invitation-body .unordered-list {
+      max-width: 550px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .invitation-body .unordered-list-heading {
+      font-size: 2em; } }
   .invitation-body li {
     /* for ul bullet color */
     color: #9f173d; }
@@ -117,15 +146,18 @@ hr {
     font-family: futura-pt, sans-serif;
     font-style: normal;
     font-weight: 200;
-    font-size: 0.9em; }
+    font-size: 0.9em;
+    line-height: 200%; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .invitation-body li span {
+      font-size: 2em;
+      line-height: 150%; } }
 
 .invitation-footer {
   /* Box-model */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: auto;
   padding-bottom: 80px;
-  height: 375px;
+  /*height: 375px;*/
   /*Typography*/
   color: white;
   text-align: center;
@@ -133,16 +165,24 @@ hr {
   background-color: #9f173d; }
   .invitation-footer .invitation-footer-title {
     /* Box Model */
+    padding-top: 40px;
     margin-bottom: 0px;
     /* Typography */
     font-size: 1.6em;
     font-weight: 100; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .invitation-footer .invitation-footer-title {
+      font-size: 4em; } }
   .invitation-footer .invitation-footer-subtitle {
     /* Box Model */
     margin-top: 0px;
     /* Typography */
-    font-size: 0.9em;
-    /*font-weight: 100;*/ }
+    font-size: 0.9em; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .invitation-footer .invitation-footer-subtitle {
+      font-size: 2em;
+      padding-left: 20px;
+      padding-right: 20px; } }
   .invitation-footer .invitation-footer-form {
     /* Box Model */
     margin-top: 20px;
@@ -178,8 +218,15 @@ hr {
     margin: auto;
     /* Typography */
     text-align: left; }
+  .invitation-footer .checkbox-container {
+    display: inline-block; }
+  .invitation-footer .label-container {
+    display: inline-block; }
   .invitation-footer .invitation-footer-checkbox-label {
     /* Typography */
     font-size: 0.5em; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .invitation-footer .invitation-footer-checkbox-label {
+      font-size: 1.5em; } }
 
 /*# sourceMappingURL=Invitation.css.map */
