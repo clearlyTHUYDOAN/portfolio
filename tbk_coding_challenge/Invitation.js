@@ -8,7 +8,6 @@ $(document).ready(function() {
       if (localStorage.restrictpopup) {
           restrictpopup = localStorage.restrictpopup;
       }
-      restrictpopup = false;
 
       if (restrictpopup === false) {
           // Initialize plugin with transition and onclose specifications.
@@ -25,7 +24,7 @@ $(document).ready(function() {
               $("#my_popup").popup("show"); 
               $("#parallax-chisel").removeClass("hidden");
               $("#parallax-shavings").removeClass("hidden");
-          }, 0);
+          }, 3000);
           restrictpopup = true;
           localStorage.restrictpopup="true";
       }
