@@ -169,7 +169,8 @@ hr {
   .invitation-body .invitation-list {
     /* Box Model */
     max-width: 450px;
-    margin-bottom: 75px;
+    padding-top: 10px;
+    padding-bottom: 40px;
     padding-right: 20px;
     margin: auto;
     /*Typography*/
@@ -177,7 +178,7 @@ hr {
   @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .invitation-body .invitation-list {
       /* Box Model */
-      max-width: 550px; } }
+      max-width: 600px; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .invitation-body .invitation-list-heading {
       /* Typography */
