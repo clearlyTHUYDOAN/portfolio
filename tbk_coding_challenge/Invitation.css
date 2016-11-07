@@ -36,6 +36,9 @@ h1 {
   /* Typography */
   font-size: 3em; }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  h1 {
+    font-size: 5em; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
   h1 {
     font-size: 6em; } }
@@ -105,9 +108,15 @@ hr {
   text-align: center;
   /*Visual*/
   background-color: white; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .invitation-body .invitation-greeting {
+      font-size: 2em; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .invitation-body .invitation-greeting {
       font-size: 3em; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .invitation-body .invitation-transition-phrase {
+      font-size: 2em; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .invitation-body .invitation-transition-phrase {
       font-size: 3em; } }
@@ -115,9 +124,12 @@ hr {
     color: #9f173d; }
   .invitation-body .event-description {
     line-height: 150%; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .invitation-body .event-description {
+      font-size: 1.9em; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .invitation-body .event-description {
-      font-size: 2em; } }
+      font-size: 1.9em; } }
   .invitation-body .unordered-list {
     /* Box Model */
     max-width: 450px;
@@ -129,6 +141,9 @@ hr {
   @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .invitation-body .unordered-list {
       max-width: 550px; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .invitation-body .unordered-list-heading {
+      font-size: 1.8em; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .invitation-body .unordered-list-heading {
       font-size: 2em; } }
@@ -148,6 +163,9 @@ hr {
     font-weight: 200;
     font-size: 0.9em;
     line-height: 200%; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .invitation-body li span {
+      font-size: 1.7em; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .invitation-body li span {
       font-size: 2em;
@@ -170,6 +188,9 @@ hr {
     /* Typography */
     font-size: 1.6em;
     font-weight: 100; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .invitation-footer .invitation-footer-title {
+      font-size: 2.5em; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .invitation-footer .invitation-footer-title {
       font-size: 4em; } }
@@ -178,11 +199,14 @@ hr {
     margin-top: 0px;
     /* Typography */
     font-size: 0.9em; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .invitation-footer .invitation-footer-subtitle {
+      font-size: 1.6em; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .invitation-footer .invitation-footer-subtitle {
       font-size: 2em;
-      padding-left: 20px;
-      padding-right: 20px; } }
+      padding-left: 50px;
+      padding-right: 50px; } }
   .invitation-footer .invitation-footer-form {
     /* Box Model */
     margin-top: 20px;
@@ -225,8 +249,14 @@ hr {
   .invitation-footer .invitation-footer-checkbox-label {
     /* Typography */
     font-size: 0.5em; }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .invitation-footer .invitation-footer-checkbox-label {
-      font-size: 1.5em; } }
+      font-size: 1.8em; } }
+  @media only screen and (min-device-width: 480px) and (max-device-width: 768px) {
+    .invitation-footer .invitation-footer-checkbox-label {
+      font-size: 1.8em; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .invitation-footer .invitation-footer-checkbox-label {
+      font-size: 3em; } }
 
 /*# sourceMappingURL=Invitation.css.map */
