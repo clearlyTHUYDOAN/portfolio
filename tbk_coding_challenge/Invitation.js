@@ -1,10 +1,9 @@
 $(document).ready(function() {
      
-      // When user has been on the site for 3 seconds, deploy popover. //
-      // Source: http://dev.vast.com/jquery-popup-overlay/ //
-      // This jQuery plugin is accessible by default. //
+      // Source: http://dev.vast.com/jquery-popup-overlay/ 
+      // This jQuery plugin is accessible by default. 
 
-      // Check localStorage to determine if popover deploys. //
+      // Check localStorage to determine if popover deploys. 
       var restrictpopup = false;
       if (localStorage.restrictpopup) {
           restrictpopup = localStorage.restrictpopup;
@@ -19,7 +18,8 @@ $(document).ready(function() {
                   $('#parallax-shavings').addClass('hidden');
               }
           }); 
-          
+
+          // When user has been on the site for 3 seconds, deploy popover. 
           setTimeout(function() {
               $('#my_popup').popup('show'); 
               $('#parallax-chisel').removeClass('hidden');
@@ -29,6 +29,7 @@ $(document).ready(function() {
           localStorage.restrictpopup='true';
       }
 
+    // Hide popup when close button is clicked. Can also be closed using ESC and clicking outside popup. 
     $(".close-button").click(function() {
         $('#my_popup').popup('hide');
         $('#parallax-chisel').addClass('hidden');
@@ -36,7 +37,7 @@ $(document).ready(function() {
     });
 
     // Parallax Chisel //
-    // Source: http://www.javascriptkit.com/dhtmltutors/parallaxscrolling/ //
+    // Source: http://www.javascriptkit.com/dhtmltutors/parallaxscrolling/ 
     
     var chisel = document.getElementById('parallax-chisel')
     var shavings = document.getElementById('parallax-shavings')

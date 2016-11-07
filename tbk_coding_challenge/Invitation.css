@@ -1,7 +1,6 @@
 body {
   margin: 0; }
 
-/* General Classes */
 .italicize {
   /* Typography */
   font-style: italic; }
@@ -46,7 +45,6 @@ hr {
   /* Visual */
   background-color: #9f173d; }
 
-/* Other Classes */
 #parallax-chisel {
   /* Positioning */
   position: fixed;
