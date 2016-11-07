@@ -1,9 +1,5 @@
-html {
-  box-sizing: border-box; }
-
-*, *::after, *::before {
-  box-sizing: inherit; }
-
+/*@import "./vendors/bourbon/bourbon";
+@import "./vendors/neat/neat";*/
 body {
   margin: 0; }
 
@@ -46,7 +42,7 @@ hr {
   /* Box Model */
   margin-top: 40px;
   margin-bottom: 40px;
-  height: 3px;
+  height: 1px;
   /* Visual */
   background-color: #9f173d; }
 
@@ -56,11 +52,18 @@ hr {
   justify-content: center;
   align-items: center; }
 
-.parallax-chisel {
-  position: absolute; }
+#parallax-chisel {
+  width: 20%;
+  position: fixed;
+  top: 400px;
+  z-index: 100002; }
 
-.parallax-shavings {
-  position: absolute; }
+#parallax-shavings {
+  width: 10%;
+  position: fixed;
+  top: 180px;
+  right: 150px;
+  z-index: 100002; }
 
 .hidden {
   display: none; }
@@ -71,6 +74,9 @@ hr {
   width: 70%;
   background-color: white; }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  #my_popup {
+    width: 90%; } }
 .close-button {
   /* Positioning */
   position: absolute;
@@ -288,15 +294,22 @@ hr {
       height: 100px; } }
   .invitation-footer .invitation-footer-checkbox {
     /* Box Model */
+    position: relative;
     margin-bottom: 30px;
     max-width: 350px;
     margin: auto;
     /* Typography */
     text-align: left; }
   .invitation-footer .checkbox-container {
-    display: inline-block; }
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    /*float: left;*/ }
   .invitation-footer .label-container {
-    display: inline-block; }
+    display: inline-block;
+    margin-left: 20px;
+    width: 80%;
+    /*float: left*/ }
   .invitation-footer .invitation-footer-checkbox-label {
     /* Typography */
     font-size: 0.5em; }

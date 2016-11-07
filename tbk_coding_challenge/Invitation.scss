@@ -1,5 +1,5 @@
-@import "./vendors/bourbon/bourbon";
-@import "./vendors/neat/neat";
+/*@import "./vendors/bourbon/bourbon";
+@import "./vendors/neat/neat";*/
 
 body {
     margin: 0; //so invitation-footer actually colours the whole way.
@@ -55,7 +55,7 @@ hr {
     /* Box Model */ 
     margin-top: 40px;
     margin-bottom: 40px;
-    height: 3px;
+    height: 1px;
     /* Visual */ 
     background-color: rgb(159,23,61);
 }
@@ -68,12 +68,19 @@ hr {
     align-items: center;
 }
 
-.parallax-chisel {
-    position: absolute;
+#parallax-chisel {
+    width: 20%;
+    position: fixed;
+    top: 400px;
+    z-index: 100002;
 }
 
-.parallax-shavings {
-    position: absolute;
+#parallax-shavings {
+    width: 10%;
+    position: fixed;
+    top: 180px;
+    right: 150px;
+    z-index: 100002;
 }
 
 .hidden {
@@ -85,6 +92,12 @@ hr {
     margin-bottom: 100px;
     width: 70%;
     background-color: white;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+    #my_popup {
+        width: 90%;
+    }
 }
 
 .close-button {
@@ -392,6 +405,7 @@ hr {
 
     .invitation-footer-checkbox {
         /* Box Model */
+        position: relative;
         margin-bottom: 30px;
         max-width: 350px;
         margin: auto;
@@ -401,10 +415,16 @@ hr {
 
     .checkbox-container {
         display: inline-block;
+        position: absolute;
+        top: 0;
+        /*float: left;*/
     }
 
     .label-container {
         display: inline-block;
+        margin-left: 20px;
+        width: 80%;
+        /*float: left*/
     }
 
     .invitation-footer-checkbox-label {
