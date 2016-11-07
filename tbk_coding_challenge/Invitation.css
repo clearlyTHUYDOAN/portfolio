@@ -45,11 +45,6 @@ hr {
   background-color: #9f173d; }
 
 /* Other Classes */
-.landing-page-header {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
 #parallax-chisel {
   width: 20%;
   position: fixed;
@@ -196,7 +191,6 @@ hr {
   /* Box-model */
   margin: auto;
   padding-bottom: 80px;
-  /*height: 375px;*/
   /*Typography*/
   color: white;
   text-align: center;
