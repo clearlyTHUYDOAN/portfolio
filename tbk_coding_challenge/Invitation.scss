@@ -410,18 +410,27 @@ hr {
         text-align: left;
     }
 
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        .invitation-footer-checkbox {
+            max-width: 500px;
+        }
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        .invitation-footer-checkbox {
+            max-width: 600px;
+        }
+    }
+
     .checkbox-container {
         display: inline-block;
         position: absolute;
         top: 0;
-        /*float: left;*/
     }
 
     .label-container {
         display: inline-block;
         margin-left: 20px;
-        width: 80%;
-        /*float: left*/
     }
 
     .invitation-footer-checkbox-label {
@@ -431,14 +440,33 @@ hr {
 
     @media only screen and (min-device-width : 480px) and (max-device-width : 1024px) {
         .invitation-footer-checkbox-label {
-            font-size: 1.8em;
+            font-size: 1em;
         }
     }
 
     @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         .invitation-footer-checkbox-label {
-            font-size: 3em;
+            font-size: 1.5em;
         }
     }
+}
+
+.bottom-design-box {
+    /* Positioning */
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /* Box Model */
+    height: 80px;
+    width: 100px;
+    /* Visual */
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+    border-width: thick;
+    /* Misc */
+    opacity: 0.9;
 }
 

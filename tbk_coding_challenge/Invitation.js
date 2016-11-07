@@ -3,10 +3,13 @@ $(document).ready(function() {
       // When user has been on the site for 3 seconds, deploy popover. //
       // Source: http://dev.vast.com/jquery-popup-overlay/ //
       // This jQuery plugin is accessible by default. //
-      var restrictpopup = false
+
+      /* Check localStorage to determine if popover deploys. */
+      var restrictpopup = false;
       if (localStorage.restrictpopup) {
           restrictpopup = localStorage.restrictpopup;
       }
+      restrictpopup = false;
 
       if (restrictpopup === false) {
           // Initialize plugin with transition.
@@ -18,12 +21,11 @@ $(document).ready(function() {
               $('#my_popup').popup('show'); 
               $('#parallax-chisel').removeClass('hidden');
               $('#parallax-shavings').removeClass('hidden');
-          }, 3000);
-          restrictpopup = true
+          }, 0);
+          restrictpopup = true;
           localStorage.restrictpopup='true';
       }
 
-    /* If user closes the popover, do not deploy on subsequent reloads/pageviews. */
     $(".close-button").click(function() {
         $('#my_popup').popup('hide');
         $('#parallax-chisel').addClass('hidden');
