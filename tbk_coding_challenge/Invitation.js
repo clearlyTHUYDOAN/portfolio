@@ -1,7 +1,7 @@
 $(document).ready(function() {
      
       // DEPLOY POPOVER. //
-      // Source: http://dev.vast.com/jquery-popup-overlay/ 
+      // Reference: http://dev.vast.com/jquery-popup-overlay/ 
       // This jQuery plugin is accessible by default. 
 
       // Check localStorage to determine if popover deploys. 
@@ -38,7 +38,7 @@ $(document).ready(function() {
     });
 
     // PARALLAX FOR CHISEL AND SHAVINGS. //
-    // Source: http://www.javascriptkit.com/dhtmltutors/parallaxscrolling/ 
+    // Reference: http://www.javascriptkit.com/dhtmltutors/parallaxscrolling/ 
     
     var chisel = document.getElementById("parallax-chisel")
     var shavings = document.getElementById("parallax-shavings")
