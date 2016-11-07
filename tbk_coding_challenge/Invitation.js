@@ -9,7 +9,6 @@ $(document).ready(function() {
       if (localStorage.restrictpopup) {
           restrictpopup = localStorage.restrictpopup;
       }
-      restrictpopup = false;
 
       if (restrictpopup === false) {
           // Initialize plugin with transition.
@@ -21,7 +20,7 @@ $(document).ready(function() {
               $('#my_popup').popup('show'); 
               $('#parallax-chisel').removeClass('hidden');
               $('#parallax-shavings').removeClass('hidden');
-          }, 0);
+          }, 3000);
           restrictpopup = true;
           localStorage.restrictpopup='true';
       }
@@ -41,7 +40,7 @@ $(document).ready(function() {
     function parallaxchiselshavings(){
         var scrolltop = $("#my_popup_wrapper")[0].scrollTop // get number of pixels document has scrolled vertically 
         chisel.style.top = 400 -scrolltop * .25 + 'px' // move chisel at 25% of scroll rate
-        shavings.style.top = 180 -scrolltop * .10 + 'px' // move shavings at 10% of scroll rate
+        shavings.style.top = 190 -scrolltop * .10 + 'px' // move shavings at 10% of scroll rate
     }
 
     $( "#my_popup_wrapper" ).scroll(function() {
