@@ -206,7 +206,7 @@ hr {
         }
     }
 
-    .unordered-list {
+    .invitation-list {
     /* Box Model */
     max-width: 450px;
     margin: auto;
@@ -217,19 +217,19 @@ hr {
     }
 
     @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
-        .unordered-list {
+        .invitation-list {
             max-width: 550px;
         }
     }
 
     @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-        .unordered-list-heading {
+        .invitation-list-heading {
             font-size: 1.8em;
         }
     }
 
     @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
-        .unordered-list-heading {
+        .invitation-list-heading {
             font-size: 2em;
         }
     }

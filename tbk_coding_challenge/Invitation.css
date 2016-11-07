@@ -151,7 +151,7 @@ hr {
   @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .invitation-body .event-description {
       font-size: 1.9em; } }
-  .invitation-body .unordered-list {
+  .invitation-body .invitation-list {
     /* Box Model */
     max-width: 450px;
     margin: auto;
@@ -160,13 +160,13 @@ hr {
     /*Typography*/
     text-align: left; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
-    .invitation-body .unordered-list {
+    .invitation-body .invitation-list {
       max-width: 550px; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    .invitation-body .unordered-list-heading {
+    .invitation-body .invitation-list-heading {
       font-size: 1.8em; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
-    .invitation-body .unordered-list-heading {
+    .invitation-body .invitation-list-heading {
       font-size: 2em; } }
   .invitation-body li {
     /* for ul bullet color */

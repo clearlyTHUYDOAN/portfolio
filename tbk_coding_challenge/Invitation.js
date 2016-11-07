@@ -4,7 +4,7 @@ $(document).ready(function() {
       // Source: http://dev.vast.com/jquery-popup-overlay/ //
       // This jQuery plugin is accessible by default. //
 
-      /* Check localStorage to determine if popover deploys. */
+      // Check localStorage to determine if popover deploys. //
       var restrictpopup = false;
       if (localStorage.restrictpopup) {
           restrictpopup = localStorage.restrictpopup;
@@ -12,7 +12,13 @@ $(document).ready(function() {
 
       if (restrictpopup === false) {
           // Initialize plugin with transition.
-          $('#my_popup').popup({transition: 'all 1s'}); 
+          $('#my_popup').popup({
+              transition: 'all 1s',
+              onclose: () => {
+                  $('#parallax-chisel').addClass('hidden')
+                  $('#parallax-shavings').addClass('hidden');
+              }
+          }); 
           // Prevent flashing of popup on page load.
           $('#my_popup').popup('hide');
           $('#my_popup').removeClass('hidden');
@@ -43,8 +49,8 @@ $(document).ready(function() {
         shavings.style.top = 190 -scrolltop * .10 + 'px' // move shavings at 10% of scroll rate
     }
 
-    $( "#my_popup_wrapper" ).scroll(function() {
-        parallaxchiselshavings();
+    $( "#my_popup_wrapper" ).scroll(function() { // when scrolling within this element...
+        parallaxchiselshavings(); // ... run this function.
     });
   
 });
