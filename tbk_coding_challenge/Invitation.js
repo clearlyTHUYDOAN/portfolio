@@ -11,7 +11,7 @@ $(document).ready(function() {
       }
 
       if (restrictpopup === false) {
-          // Initialize plugin with transition.
+          // Initialize plugin with transition and onclose specifications.
           $('#my_popup').popup({
               transition: 'all 1s',
               onclose: () => {
