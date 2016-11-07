@@ -32,9 +32,11 @@ h1 {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   h1 {
+    /* Typography */
     font-size: 5em; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
   h1 {
+    /* Typography */
     font-size: 6em; } }
 hr {
   /* Box Model */
@@ -46,35 +48,45 @@ hr {
 
 /* Other Classes */
 #parallax-chisel {
-  width: 20%;
+  /* Positioning */
   position: fixed;
   top: 400px;
-  z-index: 100002; }
+  z-index: 100002;
+  /* Box Model */
+  width: 20%; }
 
 #parallax-shavings {
-  width: 10%;
+  /* Positioning */
   position: fixed;
   top: 190px;
   right: 10%;
-  z-index: 100002; }
+  z-index: 100002;
+  /* Box Model */
+  width: 10%; }
 
 @media only screen and (min-device-width: 480px) and (max-device-width: 768px) {
   #parallax-shavings {
+    /* Positioning */
     right: 1%; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   #parallax-shavings {
+    /* Positioning */
     right: 0.5%; } }
 .hidden {
+  /* Box Model */
   display: none; }
 
 #my_popup {
+  /* Box Model */
   margin-top: 100px;
   margin-bottom: 100px;
   width: 70%;
+  /* Visual */
   background-color: white; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
   #my_popup {
+    /* Box Model */
     width: 90%; } }
 .close-button {
   /* Positioning */
@@ -97,10 +109,10 @@ hr {
   top: -40px;
   left: 0;
   right: 0;
-  margin: auto;
   /* Box Model */
   height: 450px;
   width: 120px;
+  margin: auto;
   /* Visual */
   background-color: transparent;
   border-style: solid;
@@ -110,7 +122,9 @@ hr {
   opacity: 0.5; }
 
 .invitation-body-container {
+  /* Box Model */
   width: 100%;
+  /* Visual */
   background-color: white; }
 
 .invitation-body {
@@ -126,45 +140,57 @@ hr {
   background-color: white; }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .invitation-body .invitation-greeting {
+      /* Typography */
       font-size: 2em; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .invitation-body .invitation-greeting {
+      /* Typography */
       font-size: 3em; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .invitation-body .invitation-transition-phrase {
+      /* Typography */
       font-size: 2em; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .invitation-body .invitation-transition-phrase {
+      /* Typography */
       font-size: 3em; } }
   .invitation-body .company-name {
+    /* Visual */
     color: #9f173d; }
   .invitation-body .event-description {
+    /* Typography */
     line-height: 150%; }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .invitation-body .event-description {
+      /* Typography */
       font-size: 1.9em; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .invitation-body .event-description {
+      /* Typography */
       font-size: 1.9em; } }
   .invitation-body .invitation-list {
     /* Box Model */
     max-width: 450px;
-    margin: auto;
     margin-bottom: 75px;
     padding-right: 20px;
+    margin: auto;
     /*Typography*/
     text-align: left; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .invitation-body .invitation-list {
+      /* Box Model */
       max-width: 550px; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .invitation-body .invitation-list-heading {
+      /* Typography */
       font-size: 1.8em; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .invitation-body .invitation-list-heading {
+      /* Typography */
       font-size: 2em; } }
   .invitation-body li {
     /* for ul bullet color */
+    /* Typography */
     color: #9f173d; }
   .invitation-body li span {
     /* to separate text color from bullet color. */
@@ -181,16 +207,18 @@ hr {
     line-height: 200%; }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .invitation-body li span {
+      /* Typography */
       font-size: 1.7em; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .invitation-body li span {
+      /* Typography */
       font-size: 2em;
       line-height: 150%; } }
 
 .invitation-footer {
   /* Box-model */
-  margin: auto;
   padding-bottom: 80px;
+  margin: auto;
   /*Typography*/
   color: white;
   text-align: center;
@@ -205,9 +233,11 @@ hr {
     font-weight: 100; }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .invitation-footer .invitation-footer-title {
+      /* Typography */
       font-size: 2.5em; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .invitation-footer .invitation-footer-title {
+      /* Typography */
       font-size: 4em; } }
   .invitation-footer .invitation-footer-subtitle {
     /* Box Model */
@@ -216,22 +246,26 @@ hr {
     font-size: 0.9em; }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .invitation-footer .invitation-footer-subtitle {
+      /* Typography */
       font-size: 1.6em; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .invitation-footer .invitation-footer-subtitle {
-      font-size: 2em;
+      /* Box Model */
       padding-left: 50px;
-      padding-right: 50px; } }
+      padding-right: 50px;
+      /* Typography */
+      font-size: 2em; } }
   .invitation-footer .invitation-footer-form {
     /* Box Model */
     margin-top: 20px;
     margin-bottom: 10px; }
   .invitation-footer .invitation-footer-form-input {
     /* Box Model */
-    border-style: none;
     margin-left: 5px;
     width: 200px;
-    height: 40px; }
+    height: 40px;
+    /* Visual */
+    border-style: none; }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .invitation-footer .invitation-footer-form-input {
       /* Box Model */
@@ -249,7 +283,9 @@ hr {
       width: 500px;
       height: 100px; } }
   .invitation-footer ::-webkit-input-placeholder {
+    /* Box Model */
     padding-left: 10px;
+    /* Typography */
     font-family: futura-pt, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -257,7 +293,9 @@ hr {
     color: black; }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .invitation-footer ::-webkit-input-placeholder {
+      /* Box Model */
       padding-left: 10px;
+      /* Typography */
       font-family: futura-pt, sans-serif;
       font-style: normal;
       font-weight: 400;
@@ -265,7 +303,9 @@ hr {
       color: black; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .invitation-footer ::-webkit-input-placeholder {
+      /* Box Model */
       padding-left: 10px;
+      /* Typography */
       font-family: futura-pt, sans-serif;
       font-style: normal;
       font-weight: 400;
@@ -278,24 +318,30 @@ hr {
     width: 110px;
     height: 40px;
     /* Typography */
+    color: white;
     font-size: 1em;
     /* Visual */
-    background-color: black;
-    color: white; }
+    background-color: black; }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .invitation-footer .invitation-footer-form-button {
+      /* Box Model */
       width: 350px;
       height: 75px;
+      /* Typography */
       font-size: 1.5em; } }
   @media only screen and (min-device-width: 480px) and (max-device-width: 768px) {
     .invitation-footer .invitation-footer-form-button {
+      /* Box Model */
       width: 350px;
       height: 75px;
+      /* Typography */
       font-size: 2em; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .invitation-footer .invitation-footer-form-button {
+      /* Box Model */
       width: 500px;
       height: 100px;
+      /* Typography */
       font-size: 1.8em; } }
   .invitation-footer .invitation-footer-checkbox {
     /* Box Model */
@@ -307,15 +353,20 @@ hr {
     text-align: left; }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .invitation-footer .invitation-footer-checkbox {
+      /* Box Model */
       max-width: 500px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .invitation-footer .invitation-footer-checkbox {
+      /* Box Model */
       max-width: 600px; } }
   .invitation-footer .checkbox-container {
-    display: inline-block;
+    /* Positioning */
     position: absolute;
-    top: 0; }
+    top: 0;
+    /* Box Model */
+    display: inline-block; }
   .invitation-footer .label-container {
+    /* Box Model */
     display: inline-block;
     margin-left: 20px; }
   .invitation-footer .invitation-footer-checkbox-label {
@@ -323,9 +374,11 @@ hr {
     font-size: 0.5em; }
   @media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
     .invitation-footer .invitation-footer-checkbox-label {
+      /* Typography */
       font-size: 1em; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .invitation-footer .invitation-footer-checkbox-label {
+      /* Typography */
       font-size: 1.5em; } }
 
 .bottom-design-box {
