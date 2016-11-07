@@ -109,13 +109,13 @@ hr {
   right: 0;
   /* Box Model */
   height: 450px;
-  width: 120px;
+  width: 110px;
   margin: auto;
   /* Visual */
   background-color: transparent;
   border-style: solid;
   border-color: lightgrey;
-  border-width: thick;
+  border-width: 8px;
   /* Misc */
   opacity: .5; }
 
