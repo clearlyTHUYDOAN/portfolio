@@ -4,7 +4,7 @@ body {
 
 // GENERAL CLASSES. //
 
-$ruby-red: rgb(159, 23, 61);
+$ruby-red: rgb(159,23,61);
 
 .italicize {
     /* Typography */
@@ -93,7 +93,7 @@ hr {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     #parallax-shavings {
         /* Positioning */
-        right: 0.5%;
+        right: .5%;
     }
 }
 
@@ -151,7 +151,7 @@ hr {
     border-color: lightgrey;
     border-width: thick;
     /* Misc */
-    opacity: 0.5;
+    opacity: .5;
 }
 
 .invitation-body-container {
@@ -271,7 +271,7 @@ hr {
         font-family: futura-pt, sans-serif;
         font-style: normal;
         font-weight: 200;
-        font-size: 0.9em;
+        font-size: .9em;
         line-height: 200%;
     }
 
@@ -304,7 +304,7 @@ hr {
     .invitation-footer-title {
         /* Box Model */
         padding-top: 40px;
-        margin-bottom: 0px;
+        margin-bottom: 0;
         /* Typography */
         font-size: 1.6em;
         font-weight: 100;
@@ -326,9 +326,9 @@ hr {
 
     .invitation-footer-subtitle {
         /* Box Model */
-        margin-top: 0px;
+        margin-top: 0;
         /* Typography */
-        font-size: 0.9em;
+        font-size: .9em;
     }
 
     @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -505,7 +505,7 @@ hr {
 
     .invitation-footer-checkbox-label {
         /* Typography */
-        font-size: 0.5em;
+        font-size: .5em;
     }
 
     @media only screen and (min-device-width : 480px) and (max-device-width : 1024px) {
@@ -539,6 +539,6 @@ hr {
     border-color: white;
     border-width: thick;
     /* Misc */
-    opacity: 0.9;
+    opacity: .9;
 }
 
