@@ -44,7 +44,7 @@ $(document).ready(function() {
     
     function parallaxchiselshavings(){
         var scrolltop = $("#my_popup_wrapper")[0].scrollTop // get number of pixels document has scrolled vertically 
-        chisel.style.top = 400 -scrolltop * .25 + 'px' // move chisel at 25% of scroll rate
+        chisel.style.top = 400 -scrolltop * .10 + 'px' // move chisel at 10% of scroll rate
         shavings.style.top = 190 -scrolltop * .10 + 'px' // move shavings at 10% of scroll rate
     }
 
