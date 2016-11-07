@@ -36,7 +36,7 @@ h1 {
     /* Box Model */
     margin-bottom: 50px;
     /* Typography */
-    font-size: 3em;
+    font-size: 3.5em;
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -61,6 +61,20 @@ hr {
 }
 
 /* Other Classes */
+
+.landing-page-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-chisel {
+    position: absolute;
+}
+
+.parallax-shavings {
+    position: absolute;
+}
 
 .hidden {
     display: none;
@@ -93,13 +107,13 @@ hr {
 .top-design-box {
     /* Positioning */
     position: absolute;
-    top: -20px;
+    top: -40px;
     left: 0;
     right: 0;
     margin: auto;
     /* Box Model */
-    height: 400px;
-    width: 110px;
+    height: 450px;
+    width: 120px;
     /* Visual */
     background-color: transparent;
     border-style: solid;
@@ -296,7 +310,28 @@ hr {
         height: 40px;
     }
 
-    // not standard. update later.
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        .invitation-footer-form-input {
+            /* Box Model */
+            display: block;
+            margin: auto;
+            margin-bottom: 20px;
+            width: 450px;
+            height: 80px;
+        }
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+        .invitation-footer-form-input {
+            /* Box Model */
+            display: block;
+            margin: auto;
+            margin-bottom: 20px;
+            width: 500px;
+            height: 100px;
+        }
+    }
+
     ::-webkit-input-placeholder {
         padding-left: 10px;
         font-family: futura-pt, sans-serif;
@@ -304,6 +339,28 @@ hr {
         font-weight: 400;
         font-size: 1.5em;
         color: black;
+    }
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        ::-webkit-input-placeholder {
+        padding-left: 10px;
+        font-family: futura-pt, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2em;
+        color: black;
+        }
+    } 
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+        ::-webkit-input-placeholder {
+        padding-left: 10px;
+        font-family: futura-pt, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3em;
+        color: black;
+        }
     }
 
     .invitation-footer-form-button {
@@ -317,6 +374,20 @@ hr {
         /* Visual */
         background-color: black;
         color: white;
+    }
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        .invitation-footer-form-button {
+            width: 350px;
+            height: 75px;
+        }
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+        .invitation-footer-form-button {
+            width: 500px;
+            height: 100px;
+        }
     }
 
     .invitation-footer-checkbox {
@@ -341,13 +412,7 @@ hr {
         font-size: 0.5em;
     }
 
-    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-        .invitation-footer-checkbox-label {
-            font-size: 1.8em;
-        }
-    }
-
-    @media only screen and (min-device-width : 480px) and (max-device-width : 768px) {
+    @media only screen and (min-device-width : 480px) and (max-device-width : 1024px) {
         .invitation-footer-checkbox-label {
             font-size: 1.8em;
         }

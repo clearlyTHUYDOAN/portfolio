@@ -10,7 +10,7 @@ $(document).ready(function() {
       $('#my_popup').removeClass('hidden');
       setTimeout(function() {
           $('#my_popup').popup('show'); 
-      }, 0);
+      }, 3000);
 
       // Source: http://dev.vast.com/jquery-popup-overlay/ //
 
