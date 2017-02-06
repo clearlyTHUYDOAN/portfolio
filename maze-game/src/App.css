@@ -1,0 +1,64 @@
+.App {
+  text-align: center;
+  color: red;
+  font-family: Menlo;
+  font-size: 0.8em;
+}
+
+.game-title {
+  position: relative;
+  left: 200px;
+  top: 25px;
+}
+
+.new-game-button, .quit-game-button{
+  background-color: black;
+  color: silver;
+  font-family: Monospace;
+  font-size: 15px;
+  width: 100px;
+  height: 35px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+#Coordinates {
+  color: white;
+}
+
+#Maze {
+  text-align: left;
+  width: 700px;
+  height: 500px;
+  margin: auto;
+  color: black;
+  background-color: darkgrey;
+}
+
+.play-button:hover, .start-button:hover, .restart-button:hover, .next-maze-button:hover, .leaderboard-button:hover, .new-game-button, .quit-game-button {
+  cursor: pointer;
+}
+
+.player-name-input {
+  position: relative;
+  left: 180px;
+  top: 350px;
+}
+
+.submit-player-name {
+  position: relative;
+  left: 320px;
+  top: 327px;
+}
+
+input[type=text] {
+  padding: 5px 5px;
+  background-color: black;
+  color: white;
+}
+
+.copyright {
+  color: silver;
+  font-family: Monospace;
+}
+
