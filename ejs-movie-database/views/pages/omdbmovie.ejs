@@ -1,0 +1,55 @@
+<!--COMPLETE.-->
+<!--Movie details for OMDB movies clicked from the search results page.-->
+
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/styles.css">        
+    </head>
+
+    <body>
+        <div class="container">
+            <div id="movie-details">
+                
+                    <h1 class="text-center"><%= searchresults.Title %></h1>
+                
+                <div class="row">
+                    <div class="col-md-5 col-sm-5 col-xs-12">
+                        <% if (searchresults.Poster !== "N/A") { %>
+                                <img class="movie-poster" class ="img-responsive" src=<%= searchresults.Poster %> style="padding-top: 20px; padding-bottom: 20px" />
+                            <% } else { %>
+                                <img class="movie-poster" class ="img-responsive" src="http://www.esm.rochester.edu/uploads/NoPhotoAvailable.jpg" style="padding-top: 20px; padding-bottom: 20px"/>
+                        <% } %>
+                        <!--Had to inline style because css wasn't showing in the console.-->
+                    </div>
+                    <br>
+                    <div class="col-md-7 col-sm-7 col-xs-12">
+                        <div class="details-table-container">
+                            <table class="details-table-container table">
+                            <!--This for loop looks at every key/property in the foundMovie object and makes a table with every key/property with it's respective value.-->
+                                <% for (var key in searchresults) { %>
+                                <%if (key !== "Poster" && key !== "Response" && key !=="Type") {%>
+                                <tr>
+                                    <td><%= key %></td>
+                                    <td><%= searchresults[key] %></td>
+                                </tr>
+                                <% } %>
+                                <% } %>
+                            </table>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="row">
+                    <div class=buttons>
+                        <!--<a class="btn btn-primary" href=<%= '/' %>>Back</a>--> <!--Would make user go back to home page-->
+                        <a class="btn btn-warning" onclick="history.back(-1)"/>Back</a> <!--Back to search results.-->
+                        <!--<input type="button" class="btn btn primary" value="Back" onclick="history.back(-1)" />--> <!--Back to search results but w/ differet button appearance.-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
