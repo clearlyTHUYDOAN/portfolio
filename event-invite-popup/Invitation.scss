@@ -1,0 +1,544 @@
+body {
+    margin: 0; //so invitation-footer actually colours the whole way.
+}
+
+// GENERAL CLASSES. //
+
+$ruby-red: rgb(159,23,61);
+
+.italicize {
+    /* Typography */
+    font-style: italic;
+}
+
+.font-futura-pt-thick {
+    /* Typography */
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.font-futura-pt-thin {
+    /* Typography */
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+}
+
+.font-freight {
+    /* Typography */
+    font-family: freight-big-pro, serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+h1 {
+    /* Box Model */
+    margin-bottom: 50px;
+    /* Typography */
+    font-size: 3.5em;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    h1 {
+        /* Typography */
+        font-size: 5em;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+    h1 {
+        /* Typography */
+        font-size: 6em;
+    }
+}
+
+hr {
+    /* Box Model */ 
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 1px;
+    /* Visual */ 
+    background-color: $ruby-red;
+}
+
+// OTHER CLASSES. //
+
+#parallax-chisel {
+    /* Positioning */
+    position: fixed;
+    top: 400px;
+    z-index: 100002;
+    /* Box Model */
+    width: 20%;
+}
+
+#parallax-shavings {
+    /* Positioning */
+    position: fixed;
+    top: 190px;
+    right: 10%;
+    z-index: 100002;
+    /* Box Model */
+    width: 10%;
+}
+
+@media only screen and (min-device-width : 480px) and (max-device-width : 768px) {
+    #parallax-shavings {
+        /* Positioning */
+        right: 1%;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    #parallax-shavings {
+        /* Positioning */
+        right: .5%;
+    }
+}
+
+.hidden {
+    /* Box Model */
+    display: none;
+}
+
+#my_popup {
+    /* Box Model */
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 70%;
+    /* Visual */
+    background-color: white;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+    #my_popup {
+        /* Box Model */
+        width: 90%;
+    }
+}
+
+.close-button {
+    /* Positioning */
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    /* Box Model */
+    width: 25px;
+    /* Visual */
+    color: $ruby-red;
+    background-color: white;
+}
+
+/* Visual cue for users to know they can click close button */
+.close-button:hover {
+    cursor: pointer;
+}
+
+.top-design-box {
+    /* Positioning */
+    position: absolute;
+    top: -40px;
+    left: 0;
+    right: 0;
+    /* Box Model */
+    height: 450px;
+    width: 110px;
+    margin: auto;
+    /* Visual */
+    background-color: transparent;
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 8px;
+    /* Misc */
+    opacity: .5;
+}
+
+.invitation-body-container {
+    /* Box Model */
+    width: 100%;
+    /* Visual */
+    background-color: white;
+}
+
+.invitation-body {
+    /* Box-model */
+    max-width: 575px;
+    padding-top: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+    /*Typography*/
+    text-align: center;
+    /*Visual*/
+    background-color: white;
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        .invitation-greeting {
+            /* Typography */
+            font-size: 2em;
+        }
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+        .invitation-greeting {
+            /* Typography */
+            font-size: 3em;
+        }
+    }
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        .invitation-transition-phrase {
+            /* Typography */
+            font-size: 2em;
+        }
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+        .invitation-transition-phrase {
+            /* Typography */
+            font-size: 3em;
+        }
+    }
+
+    .company-name {
+        /* Visual */
+        color: $ruby-red;
+    }
+
+    .event-description {
+        /* Typography */
+        line-height: 150%;
+    }
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        .event-description {
+            /* Typography */
+            font-size: 1.9em;
+        }
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+        .event-description {
+            /* Typography */
+            font-size: 1.9em;
+        }
+    }
+
+    .invitation-list {
+    /* Box Model */
+    max-width: 450px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-right: 20px;
+    margin: auto;
+     /*Typography*/
+    text-align: left;
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+        .invitation-list {
+            /* Box Model */
+            max-width: 600px;
+        }
+    }
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        .invitation-list-heading {
+            /* Typography */
+            font-size: 1.8em;
+        }
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+        .invitation-list-heading {
+            /* Typography */
+            font-size: 2em;
+        }
+    }
+
+    li { /* for ul bullet color */
+        /* Typography */
+        color: $ruby-red;
+    }
+
+    li span { /* to separate text color from bullet color. */
+        /* Positioning */
+        position: relative;
+        left: 15px; /* to provide space between bullets and list items */
+        /* Typography */
+        color: black;
+        font-family: futura-pt, sans-serif;
+        font-style: normal;
+        font-weight: 200;
+        font-size: .9em;
+        line-height: 200%;
+    }
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        li span {
+            /* Typography */
+            font-size: 1.7em;
+        }
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+        li span {
+            /* Typography */
+            font-size: 2em;
+            line-height: 150%;
+        }
+    }    
+}
+
+.invitation-footer {
+    /* Box-model */
+    padding-bottom: 80px;
+    margin: auto;
+    /*Typography*/
+    color: white;
+    text-align: center;
+    /*Visual*/
+    background-color: $ruby-red;
+
+    .invitation-footer-title {
+        /* Box Model */
+        padding-top: 40px;
+        margin-bottom: 0;
+        /* Typography */
+        font-size: 1.6em;
+        font-weight: 100;
+    }
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        .invitation-footer-title {
+            /* Typography */
+            font-size: 2.5em;
+        }
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+        .invitation-footer-title {
+            /* Typography */
+            font-size: 4em;
+        }
+    }
+
+    .invitation-footer-subtitle {
+        /* Box Model */
+        margin-top: 0;
+        /* Typography */
+        font-size: .9em;
+    }
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        .invitation-footer-subtitle {
+            /* Typography */
+            font-size: 1.6em;
+        }
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+        .invitation-footer-subtitle {
+            /* Box Model */
+            padding-left: 50px;
+            padding-right: 50px;
+            /* Typography */
+            font-size: 2em;
+        }
+    }
+
+    .invitation-footer-form {
+        /* Box Model */
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .invitation-footer-form-input {
+        /* Box Model */
+        margin-left: 5px;
+        width: 200px;
+        height: 40px;
+        /* Visual */
+        border-style: none;
+    }
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        .invitation-footer-form-input {
+            /* Box Model */
+            display: block;
+            margin: auto;
+            margin-bottom: 20px;
+            width: 450px;
+            height: 80px;
+        }
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+        .invitation-footer-form-input {
+            /* Box Model */
+            display: block;
+            margin: auto;
+            margin-bottom: 20px;
+            width: 500px;
+            height: 100px;
+        }
+    }
+
+    ::-webkit-input-placeholder {
+        /* Box Model */
+        padding-left: 10px;
+        /* Typography */
+        font-family: futura-pt, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5em;
+        color: black;
+    }
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        ::-webkit-input-placeholder {
+        /* Box Model */
+        padding-left: 10px;
+        /* Typography */
+        font-family: futura-pt, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2em;
+        color: black;
+        }
+    } 
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+        ::-webkit-input-placeholder {
+        /* Box Model */
+        padding-left: 10px;
+        /* Typography */
+        font-family: futura-pt, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3em;
+        color: black;
+        }
+    }
+
+    .invitation-footer-form-button {
+        /* Box Model */
+        border-style: none;
+        margin-left: 5px;
+        width: 110px;
+        height: 40px;
+        /* Typography */ 
+        color: white;
+        font-size: 1em;
+        /* Visual */
+        background-color: black;
+    }
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        .invitation-footer-form-button {
+            /* Box Model */
+            width: 350px;
+            height: 75px;
+            /* Typography */
+            font-size: 1.5em;
+        }
+    }
+
+    @media only screen and (min-device-width : 480px) and (max-device-width : 768px) {
+        .invitation-footer-form-button {
+            /* Box Model */
+            width: 350px;
+            height: 75px;
+            /* Typography */
+            font-size: 2em;
+        }
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        .invitation-footer-form-button {
+            /* Box Model */
+            width: 500px;
+            height: 100px;
+            /* Typography */
+            font-size: 1.8em;
+        }
+    }
+
+    .invitation-footer-checkbox {
+        /* Box Model */
+        position: relative;
+        margin-bottom: 30px;
+        max-width: 350px;
+        margin: auto;
+        /* Typography */
+        text-align: left;
+    }
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        .invitation-footer-checkbox {
+            /* Box Model */
+            max-width: 500px;
+        }
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        .invitation-footer-checkbox {
+            /* Box Model */
+            max-width: 600px;
+        }
+    }
+
+    .checkbox-container {
+        /* Positioning */
+        position: absolute;
+        top: 0;
+        /* Box Model */
+        display: inline-block;
+    }
+
+    .label-container {
+        /* Box Model */
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    .invitation-footer-checkbox-label {
+        /* Typography */
+        font-size: .5em;
+    }
+
+    @media only screen and (min-device-width : 480px) and (max-device-width : 1024px) {
+        .invitation-footer-checkbox-label {
+            /* Typography */
+            font-size: 1em;
+        }
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        .invitation-footer-checkbox-label {
+            /* Typography */
+            font-size: 1.5em;
+        }
+    }
+}
+
+.bottom-design-box {
+    /* Positioning */
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /* Box Model */
+    height: 80px;
+    width: 100px;
+    /* Visual */
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+    border-width: thick;
+    /* Misc */
+    opacity: .9;
+}
+
