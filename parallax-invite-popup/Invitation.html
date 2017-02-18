@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" charset="UTF-8">
+    <link rel="stylesheet" href="./Invitation.css">
+    
+    <title>tbk Coding Challenge</title>
+</head>
+
+<body>
+
+    <img class="hidden" id="parallax-chisel" src="./parallax_pngs/chisel.png" alt="chisel">
+    <img class="hidden" id="parallax-shavings" src="./parallax_pngs/shavings.png" alt="shavings">
+
+    <div id="my_popup" class="hidden"> <!--Prevent flashing of popup on page load.-->
+
+        <div class="top-design-box"></div>
+
+            <div class="invitation-body-container">
+
+                <div class="close-button">
+                    <p class="font-futura-pt-thin">X</p>
+                </div>
+
+                <div class="invitation-body">
+
+                    <p class="invitation-greeting font-futura-pt-thin">YOU ARE CORDIALLY INVITED</p>
+                    <p class="invitation-greeting font-futura-pt-thin">TO THE LAUNCH</p>
+                    <p class="invitation-transition-phrase italicize">of the</p>
+                        <h1 class="font-freight">
+                            NEW <br> 
+                            <span class="company-name">COMPANY</span> <br> 
+                            WEBSITE
+                        </h1>
+                    
+                    <div class="event-description">
+                        <p class="font-futura-pt-thick">
+                            Lorem ipsum dolor sit amet, vix suas liber conclusionemque eu. 
+                            Ad quo esse purto eros, nemore volutpat ut quo, copiosae concludaturque nam in.
+                        </p>
+                    </div>
+                    
+                    <hr width="20%">
+                    
+                    <p class="invitation-list-heading font-futura-pt-thin">AD EST ODIO NOSTER:</p>
+
+                    <div class="invitation-list">
+                        <ul>
+                            <li><span>Ex vis amet graeci accumsan</span></li>
+                            <li><span>Civibus iracundia quo ad</span></li>
+                            <li><span>Eu impetus feugiat civibus qui</span></li>
+                            <li><span>Mel in mucius argumentum, an accumsan petentium vim</span></li>
+                            <li><span>Vim at rationibus interesset</span></li>
+                        </ul>
+                    </div>
+
+                </div> <!--invitation-body-->
+
+            </div><!--invitation-body-container-->
+
+            <div class="invitation-footer">
+                <div class="invitation-footer-content">
+
+                    <h3 class="invitation-footer-title font-freight">
+                        GET YOUR FOOT IN THE DOOR.
+                    </h3>
+
+                    <h4 class="invitation-footer-subtitle font-futura-pt-thin">Know the moment our new website goes live.</h4>
+
+                    <form class="invitation-footer-form">
+                        <input class="invitation-footer-form-input" type="text"placeholder="Name">
+                        <input class="invitation-footer-form-input" type="email" placeholder="Email">
+                        <input class="invitation-footer-form-button font-freight" type="button" value="SUBMIT">
+                    </form>
+
+                        <br>
+
+                    <div class="invitation-footer-checkbox">
+                        <div class="checkbox-container">
+                            <input type="checkbox">
+                        </div>
+                        <div class="label-container">
+                            <label class="invitation-footer-checkbox-label font-futura-pt-thin">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                                Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. 
+                                Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+                            </label>
+                        </div>
+                    </div>
+
+                </div> <!--invitation-footer-content-->
+
+            </div> <!--invitation-footer-->
+
+        <div class="bottom-design-box"></div>
+
+    </div> <!--pop up-->
+
+    <script 
+        src="https://code.jquery.com/jquery-3.1.1.js" 
+        integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" 
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
+    <script src="./Invitation.js"></script>
+
+</body>
+
+</html>
